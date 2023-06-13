@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 ">
+    <div>
+        <div class="relative h-screen overflow-hidden">
+            <!-- background animation start -->
+            <div class="bubbles relative flex justify-evenly -z-50">
+                <span style="--i:11" class="relative w-7 h-7 bg-[#4fc3dc] mx-1 rounded-full"></span>
+                <span style="--i:17" class="relative w-7 h-7 bg-[#4fc3dc] mx-1 rounded-full"></span>
+                <span style="--i:14" class="relative w-7 h-7 bg-[#4fc3dc] mx-1 rounded-full"></span>
+                <span style="--i:26" class="relative w-7 h-7 bg-[#4fc3dc] mx-1 rounded-full"></span>
+                <span style="--i:16" class="relative w-7 h-7 bg-[#4fc3dc] mx-1 rounded-full"></span>
+                <span style="--i:11" class="relative w-7 h-7 bg-[#4fc3dc] mx-1 rounded-full"></span>
+                <span style="--i:18" class="relative w-7 h-7 bg-[#4fc3dc] mx-1 rounded-full"></span>
+                <span style="--i:22" class="hidden md:block relative w-7 h-7 bg-[#4fc3dc] mx-1 rounded-full"></span>
+                <span style="--i:36" class="hidden md:block relative w-7 h-7 bg-[#4fc3dc] mx-1 rounded-full"></span>
+                <span style="--i:10" class="hidden md:block relative w-7 h-7 bg-[#4fc3dc] mx-1 rounded-full"></span>
+                <span style="--i:19" class="hidden md:block relative w-7 h-7 bg-[#4fc3dc] mx-1 rounded-full"></span>
+                <span style="--i:14" class="hidden md:block relative w-7 h-7 bg-[#4fc3dc] mx-1 rounded-full"></span>
+                <span style="--i:15" class="hidden md:block relative w-7 h-7 bg-[#4fc3dc] mx-1 rounded-full"></span>
+                <span style="--i:16" class="hidden md:block relative w-7 h-7 bg-[#4fc3dc] mx-1 rounded-full"></span>
+                <span style="--i:28" class="hidden md:block relative w-7 h-7 bg-[#4fc3dc] mx-1 rounded-full"></span>
+                <span style="--i:17" class="hidden md:block relative w-7 h-7 bg-[#4fc3dc] mx-1 rounded-full"></span>
+                <span style="--i:10" class="hidden md:block relative w-7 h-7 bg-[#4fc3dc] mx-1 rounded-full"></span>
+                <span style="--i:19" class="hidden md:block relative w-7 h-7 bg-[#4fc3dc] mx-1 rounded-full"></span>
+                <span style="--i:21" class="hidden md:block relative w-7 h-7 bg-[#4fc3dc] mx-1 rounded-full"></span>
+            </div>
+            <!-- background animation end -->
+            <!-- weather app starts -->
+            <div class="z-[1000]">
+                <div class="flex justify-center items-center h-[100vh]">
+                    <div
+                        class="container weather-card w-[90%] bg-gradient-to-br from-teal-400 to-indigo-800 text-white mx-auto md:max-w-xl rounded-2xl p-10 text-center">
+                        <div class="search w-full flex items-center justify-between">
+                            <input id="searchBox"
+                                class="border-0 outline-none py-2 px-4 h-12 rounded-3xl text-gray-900 font-semibold"
+                                type="text" placeholder="enter city name">
+                            <button id="searchBtn"
+                                class="border-0 outline-none rounded-full h-12 w-12 cursor-pointer bg-white pl-3"><img
+                                    class="h-6" src="images/search.png" alt=""></button>
+                        </div>
+                        <div class="weather-data">
+                            <img class="weather-icon w-44 mt-5 mx-auto" src="images/clear.png" alt="">
+                            <h1 class="temperature text-6xl">22°C</h1>
+                            <h2 class="city temperature text-3xl">London</h2>
+                            <div class="weather-details flex items-center justify-between px-5 mt-5">
+                                <div class="col flex items-center text-left">
+                                    <img class="w-10 md:mr-2" src="images/humidity.png" alt="">
+                                    <div>
+                                        <p class="humidity md:text-2xl">50%</p>
+                                        <p>Humidity</p>
+                                    </div>
+                                </div>
+                                <div class="col flex items-center text-left">
+                                    <img class="w-10 md:mr-2" src="images/wind.png" alt="">
+                                    <div>
+                                        <p class="wind md:text-2xl">15 km/h</p>
+                                        <p>Wind Speed</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- weather app ends -->
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
